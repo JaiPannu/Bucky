@@ -1,4 +1,4 @@
-# Bucky Robot Arm - ROS 2 Setup
+# Bucky Setup
 
 ## Project Structure
 
@@ -7,7 +7,7 @@ bucky_description/  - Robot model (URDF, meshes, visual files)
 bucky_bringup/     - Launch files to start the robot
 ```
 
-# Next Steps
+# Next steps
 
 insert XACRO in `bucky_description/urdf/bucky.urdf.xacro`
 
@@ -17,8 +17,6 @@ After conversion:
 1. Place your URDF/XACRO files in `bucky_description/urdf/`
 2. Place mesh files (STL/DAE) in `bucky_description/meshes/`
 3. Update the filename in launch file if different from `bucky.urdf.xacro`
-
-### 2. Testing with Foxglove Studio
 
 Terminal 1 - Start the robot:**
 ```bash
@@ -45,18 +43,18 @@ Add a 3D panel and subscribe to `/robot_description` topic
 
 I have added joint sliders
 
-### 4. Next up
+Next up
 
 Once you can visualize your robot:
 
-**For Simulation:**
+For Simulation:
 - Add Gazebo simulation with physics and controllers
 - Configure ros2_control for joint control
 
-**For Real Hardware:**
+For Real Hardware:
 - Set up hardware interface for your motor controllers
 - Configure ros2_control with your specific hardware
 
-**For Motion Planning:**
+For Motion Planning:
 - Set up MoveIt2 for trajectory planning
 - Add collision checking and inverse kinematics
