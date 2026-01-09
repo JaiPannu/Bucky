@@ -17,7 +17,7 @@ I have added joint sliders
 
 Next up
 
-Once you can visualize your robot:
+Hey Chen please add the XACRO
 
 For Simulation:
 - Add Gazebo simulation with physics and controllers
