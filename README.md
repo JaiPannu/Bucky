@@ -1,5 +1,7 @@
 # Bucky Setup
 
+This is an open-source implementation of Bucky, a robotic arm inspired by Tony Stark's DUM E. This configuration was made with 3 DOF in mind however the software layer described in this repo is modularly produced so that it can handle merging architecture.
+
 ## Project Structure
 
 ```
@@ -7,7 +9,10 @@ bucky_description/  - Robot model (URDF, meshes, visual files)
 bucky_bringup/     - Launch files to start the robot
 ```
 
-# Next steps
+# For anyone wanting to integrate into their system
+
+Clone this repository
+Set up your ROS 2 environment
 
 Connect to Foxglove
 Connect to `ws://localhost:8765`
@@ -20,10 +25,10 @@ Next up
 Hey Chen please add the XACRO
 
 For Simulation:
-- Add Gazebo simulation with physics and controllers
-- Configure ros2_control for joint control
+- Gazebo simulation with physics and controllers
+- Configure ros2_control for joint control (Depends )
 
-For Real Hardware:
+For Hardware:
 - Set up hardware interface for your motor controllers
 - Configure ros2_control with your specific hardware
 
