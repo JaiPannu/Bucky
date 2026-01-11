@@ -1,6 +1,8 @@
-# Bucky Setup
+# Bucky: A Modular Robotic Arm
 
-This is an open-source implementation of Bucky, a robotic arm inspired by Tony Stark's DUM E. This configuration was made with 3 DOF in mind however the software layer described in this repo is modularly produced so that it can handle merging architecture.
+This repository contains the ROS 2 software for Bucky, a robotic arm inspired by Tony Stark's DUM-E. The software is designed with a modular architecture to support various robot configurations (e.g., 3-DOF, 6-DOF) from a single, unified codebase.
+
+The core voice control pipeline is: **Ears (Speech-to-Text) -> Brain (NLP Intent Parsing) -> Commander (Motion Execution)**.
 
 ## Project Structure
 
